@@ -1,6 +1,6 @@
-# Kompas Bank – Business Banking App (Transaction Banking)
+# Business Banking App (Transaction Banking)
 
-Native mobile banking app for **Kompas Bank (Denmark)**, made for **business customers** ("Banking for modern businesses").
+Native mobile banking app for a **bank in Denmark**, made for **business customers** ("Banking for modern businesses").
 Companies can view their accounts and transactions, pay recipients in Denmark and abroad, **approve payments and recipients**, manage loans, and message the bank securely. Login uses **MitID** or **Freja eID**.
 
 The app is built natively on **both platforms**:
@@ -119,8 +119,8 @@ Both apps use the same backend REST APIs, the same login and approval flows, and
 ## Project structure (Android)
 
 ```
-app/src/main/java/com/kompasbank/kompas/
-├── AuraCloudApplication.kt
+app/src/main/java/<package>/
+├── App.kt                    # Application class (Hilt)
 ├── MainActivity.kt           # Bottom navigation host
 ├── data/
 │   ├── data_source/          # Retrofit API interface, Paging sources
@@ -171,7 +171,7 @@ app/src/main/java/com/kompasbank/kompas/
 
 ## My role
 
-I worked on this project as an **Application Developer at Auracloud Technologies**, building the app natively for **Android (Kotlin, Android Studio)** and **iOS (Swift, SwiftUI, Xcode)**:
+I worked on this project as an **Application Developer**, building the app natively for **Android (Kotlin, Android Studio)** and **iOS (Swift, SwiftUI, Xcode)**:
 - built the **recipients and payments** module: add, edit and delete recipients with address and bank-detail validation (IBAN, SWIFT/BIC, sort code);
 - built the **multi-step domestic and international transfer** flows: own-account transfer, recipient selection, amount entry and swipe-to-confirm;
 - implemented **payment editing, upcoming payments and pending approvals** for scheduled and recurring transfers;
